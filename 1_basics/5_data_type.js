@@ -117,6 +117,7 @@ const symbol2 = Symbol('1');
 
 console.log(symbol1 == symbol2);
 console.log(symbol1 === symbol2);
+console.log('🚀 ~ symbol1:', typeof symbol1);
 
 /**
  * Object
