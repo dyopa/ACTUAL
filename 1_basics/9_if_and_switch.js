@@ -119,18 +119,11 @@ console.log('합계:', sum);
 function getLen(s) {
   return (s ?? '').toString().length;
 }
+
 function addPoints(a, b) {
-  // let len = getLen(a);
-  // if (getLen(b) > len) len = getLen(b);
-
-  // const aLen = getLen(a);
-  // const bLen = getLen(b);
-  // const len = aLen > bLen ? aLen : bLen;
-
   const len = Math.max(getLen(a), getLen(b));
-
   const ret = (a + b).toFixed(len - 2);
-  console.log('🚀>>', ret);
+  console.log('🚀 ~ addPoints ~ ret:', ret);
 
   return +ret;
 }
